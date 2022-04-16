@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="details">
+      <div class="title">
+        <p>Learn to code by watching others</p>
+      </div>
+      <div class="info">
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </div>
+    </div>
+    <div class="form-details">
+      <div class="free-box">
+        <P><span style="font-weight:600">Try it free 7 days</span>  then $20/mo. thereafter</P>
+      </div>
+      <div class="entry-card">
+        <form name="my-form" action="#" onsubmit="validateForm()"> 
+          <div class="entry-box">
+            <input type='text' class="text-input" id='first' placeholder="First Name" name='firstName'>
+            <img id="alertImageFirstName" src="images/icon-error.svg" class="alert-image" alt="">
+          </div>
+          <div id="alertTextFirstName" class="alert-text">
+            <p>&nbsp;</p>
+          </div>
+        
+          <div class="entry-box">
+            <input type='text' class="text-input" id='last' placeholder="Last Name" name='lastName'>
+            <img id="alertImageLastName" class="alert-image" src="images/icon-error.svg"  alt="">
+          </div>
+          <div id="alertTextLastName" class="alert-text">
+            <p>&nbsp;</p>
+          </div>
+        
+          <div class="entry-box">
+            <input type='text' class="text-input" id='email' name="email" placeholder="Email Address">
+            <img id="alertImageEmail" class="alert-image" src="images/icon-error.svg" alt="">
+          </div> 
+          <div id="alertTextEmail" class="alert-text">
+            <p>&nbsp;</p>
+          </div>
+        
+          <div class="entry-box">
+            <input type='text' class="text-input" id='password' name="password" placeholder="Password">
+            <img id="alertImagePassword" src="images/icon-error.svg" class="alert-image"  alt="">
+          </div>
+          <div id="alertTextPassword" class="alert-text">
+            <p>&nbsp;</p>
+          </div>
+        
+          <button id="btn" class="claim-button" type="submit">
+            Claim your free trial 
+          </button>
+          
+          <div class="disclaimer">
+            <P>By clicking the button, you are agreeing to our <span style="color:red; cursor: pointer;">Terms and Services</span></P>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ali Mughees</a>.
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
